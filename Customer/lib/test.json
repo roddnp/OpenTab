@@ -1,0 +1,24 @@
+{
+  "chats": {
+    "12345678": {
+      "8gj23f": {
+        "text": "can we get some sauce?",
+        "receiverID": "5678",
+        "senderID": "1234",
+        "timestamp": "3:03"
+      },
+      "56h56h": {
+        "text": "sure!",
+        "receiverID": "1234",
+        "senderID": "5678",
+        "timestamp": "3:04"
+      },
+      "fgh65h": {
+        "text": "thanks!",
+        "receiverID": "5678",
+        "senderID": "1234",
+        "timestamp": "3:05"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+RPCError: ext.flutter.debugDumpRenderTree: (-32603) ext.flutter.debugDumpRenderTree: Unexpected error from chrome devtools:
+text: Uncaught (in promise)
+exception:
+  description: null
+  type: string
+  value: Unexpected null value.
+attempted JS eval: `require("dart_sdk").developer.invokeExtension(
+    "ext.flutter.debugDumpRenderTree", JSON.stringify({}));
+`
+
+#0      handleErrorIfPresent (package:dwds/src/utilities/shared.dart:97:5)
+#1      ChromeProxyService.callServiceExtension (package:dwds/src/services/chrome_proxy_service.dart:351:5)
+<asynchronous suspension>
+#2      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:125:47)
+<asynchronous suspension>
+
+
+```
+#0      new _OutstandingRequest (package:vm_service/src/vm_service.dart:1734:45)
+#1      VmService._call (package:vm_service/src/vm_service.dart:2245:21)
+#2      VmService.callServiceExtension (package:vm_service/src/vm_service.dart:2216:14)
+#3      FlutterVmService._checkedCallServiceExtension (package:flutter_tools/src/vmservice.dart:776:28)
+#4      FlutterVmService.invokeFlutterExtensionRpcRaw (package:flutter_tools/src/vmservice.dart:795:49)
+#5      FlutterVmService.flutterDebugDumpRenderTree (package:flutter_tools/src/vmservice.dart:554:50)
+#6      ResidentHandlers.debugDumpRenderTree (package:flutter_tools/src/resident_runner.dart:668:52)
+<asynchronous suspension>
+#7      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1685:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.0.5, on macOS 12.1 21C52 darwin-arm, locale en-US)
+    • Flutter version 3.0.5 at /Users/nathan/Documents/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision f1875d570e (5 months ago), 2022-07-13 11:24:16 -0700
+    • Engine revision e85ea0e79c
+    • Dart version 2.17.6
+    • DevTools version 2.12.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 32.1.0-rc1)
+    • Android SDK at /Users/nathan/Library/Android/sdk
+    • Platform android-33, build-tools 32.1.0-rc1
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 11.0.11+0-b60-7772763)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 13.4.1)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • CocoaPods version 1.11.3
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 2021.1)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.11+0-b60-7772763)
+
+[✓] IntelliJ IDEA Community Edition (version 2021.2.1)
+    • IntelliJ at /Applications/IntelliJ IDEA CE.app
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+
+[✓] VS Code (version 1.73.1)
+    • VS Code at /Users/nathan/Desktop/Visual Studio Code.app/Contents
+    • Flutter extension can be installed from:
+      🔨 https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected device (2 available)
+    • macOS (desktop) • macos  • darwin-arm64   • macOS 12.1 21C52 darwin-arm
+    • Chrome (web)    • chrome • web-javascript • Google Chrome 107.0.5304.110
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+• No issues found!
+```

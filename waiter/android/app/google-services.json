@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "53917388536",
+    "firebase_url": "https://opentab-8039c-default-rtdb.firebaseio.com",
+    "project_id": "opentab-8039c",
+    "storage_bucket": "opentab-8039c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53917388536:android:a05e61c82fcff6e9a6b50d",
+        "android_client_info": {
+          "package_name": "com.example.opentab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53917388536-goiubfa3minar4bgjkotftpnv7aum5hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHJdnW682KAC7LnzJ6gW_fQaaxHmgGu9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53917388536-goiubfa3minar4bgjkotftpnv7aum5hk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53917388536-vu93ofi31jilbr04k9gdoib88ovi6fn0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.opentab"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
